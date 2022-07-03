@@ -12,7 +12,7 @@
   - name: i want to  start webserver on ubantu nodes
     service:
        name: apache2
-       state: restarted 
+       state: started 
     when: ansible_os_family =="debian"
 
   - name: i want to install webserver   on Redhat nodes
