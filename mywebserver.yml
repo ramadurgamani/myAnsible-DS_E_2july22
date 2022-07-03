@@ -8,7 +8,7 @@
       state: present
 
   - name: i want to  start webserver
-    services:
+    service:
        name: apache2
        state: restarted
 
