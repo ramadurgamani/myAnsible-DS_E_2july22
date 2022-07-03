@@ -3,17 +3,28 @@
   become: yes
   gather_facts: yes
   tasks: 
-  - name: i want to install  apche2 webserver
+  - name: i want to install  apche2 webserver in ubantu nodes
     apt:
       name: apache2  
       state: present
     when: ansible_os_family =="debian" 
 
-  - name: i want to  start webserver
+  - name: i want to  start webserver on ubantu nodes
     service:
        name: apache2
        state: restarted 
     when: ansible_os_family =="debian"
+
+  - name: i want to install webserver   on redhat nodes
+    yum:
+      name: httpd
+      state: present
+    when: ansible_os_family =="Redhat"
+  -name: i  want to start webserver on redhat nodes 
+   service:  
+     name: httpd
+     state: started 
+    when: ansible_os_family =="Redhat"
 
        
 
