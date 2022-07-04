@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.25.218
+- hosts: all
   become: yes
   gather_facts: yes
   tasks:
