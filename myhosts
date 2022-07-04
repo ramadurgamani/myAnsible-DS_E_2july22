@@ -1,14 +1,26 @@
-{mywebservers}
-172.31.7.161
-172.31.29.91
+[mywebservers]
+172.31.25.218
+172.31.0.122
+172.31.3.10
 
-{myappservers}
+
+[myappservers]
 172.31.25.21
-172.31.20.12
+172.31.0.12
 
-{myDBservers}
+[myDBservers]
 172.31.25.219
-172.31.20.129
+172.31.0.129
+
+
+[myservers]
+server01 java
+server02 java8
+server03 java8
+server04 java11
+server05 java1
+
+
 
 
 
